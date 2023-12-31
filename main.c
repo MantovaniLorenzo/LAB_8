@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define N 4
+#define N 100
 
 typedef struct nomi {
 	char nome[20];
@@ -23,7 +23,7 @@ int main(void) {
 	char nome_file[21], str[20];
 	Nomi* v;
 
-	// ALLOCAZIONE PER IL VETTORE DI STRUTTURE (CIOè LA RUBRICA)
+	// ALLOCAZIONE PER IL VETTORE DI STRUTTURE (CIOÃ¨ LA RUBRICA)
 	v = (Nomi*)malloc(N * sizeof(Nomi));
 	if (v == NULL) {
 		printf("Errore di allocazione.\n");
@@ -51,7 +51,7 @@ int main(void) {
 
 	// GESTIONE ELEMENTI
 	
-	// L'utente inserisce una serie di nominativi, se il nome è presente può decidere di aggiornare i dati oppure eliminare il nominativo
+	// L'utente inserisce una serie di nominativi, se il nome Ã¨ presente puÃ² decidere di aggiornare i dati oppure eliminare il nominativo
 	// la richiesta termina quando l'utente digita EOF
 
 	printf("\nInserire un nominativo: ");
@@ -82,7 +82,7 @@ int main(void) {
 				}
 			}
 		}
-		// se è arrivato qua non è presente quindi faccio inserimento in coda a tutti gli elementi
+		// se Ã¨ arrivato qua non Ã¨ presente quindi faccio inserimento in coda a tutti gli elementi
 		if (flag == 0) {
 			if (dim < N) {
 				strcpy(v[dim].nome, str);
