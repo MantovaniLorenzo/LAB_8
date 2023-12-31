@@ -48,7 +48,7 @@ int main(void) {
 	}
 
 	dim = i; // Nel caso l'utente non abbia utilizzato tutti i 100 posti disponibili in rubrica
-
+        fclose(fp);
 	// GESTIONE ELEMENTI
 	
 	// L'utente inserisce una serie di nominativi, se il nome è presente può decidere di aggiornare i dati oppure eliminare il nominativo
